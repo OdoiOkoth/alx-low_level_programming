@@ -1,23 +1,25 @@
 #include <stdio.h>
 /**
- * main - printing numbers from 0-9 with comma and space between them
- * Description: using the main function
- * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
+ * main - Entry point
+ *
+ * Description: print all alphabet letters
+ *
  * Return: 0
  */
-int main (void)
+int main(void)
 {
-	int c;
+	int n = 0;
 
-	for (c = 48; c <= 57; c++)
+	while (n < 10)
 	{
-		putchar(c);
-		if (c != 57)
+		putchar(n + '0');
+		if (n != 9)
 		{
-			putchar(',');
-			putchar(' ');
+			 putchar(',');
+			 putchar(' ');
 		}
+		++n;
 	}
-	putchaar('\n');
+	putchar('\n');
 	return (0);
 }
