@@ -5,6 +5,7 @@
  * @s1: string 1.
  *  @s2: string 2. It can contains a * as a special character.
  *   @s2: string 2. It can contains a * as a special character.
+ * Return: Always 0.
  */
 
 int wildcmp(char *s1, char *s2)
